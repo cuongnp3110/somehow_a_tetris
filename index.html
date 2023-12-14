@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag And Drop</title>
+    <link rel="stylesheet" href="tetris.css">
+    <script src="tetris.js" defer></script>
+    <script src="canvas.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="items">
+            <h1>Shape</h1>
+            <div class="shape-container">
+                <canvas class="draggable" draggable="true" id="L_block"></canvas>
+                <canvas class="draggable" draggable="true" id="L_reverse_block"></canvas>
+                <canvas class="draggable" draggable="true" id="O_block"></canvas>
+                <canvas class="draggable" draggable="true" id="I_block"></canvas>
+                <canvas class="draggable" draggable="true" id="S_block"></canvas>
+                <canvas class="draggable" draggable="true" id="Z_block"></canvas>
+            </div>
+        </div>
+        <div id="board-container">
+            <div id="board">
+                <div class="droppable d1" id="dot-container" data-draggable-id="1" data-row="0" data-col="0"><div id="dot"></div></div>
+                <div class="droppable d2" id="dot-container" data-draggable-id="2" data-row="0" data-col="1"><div id="dot"></div></div>
+                <div class="droppable d3" id="dot-container" data-draggable-id="3" data-row="0" data-col="2"><div id="dot"></div></div>
+                <div class="droppable d4" id="dot-container" data-draggable-id="4" data-row="1" data-col="0"><div id="dot"></div></div>
+                <div class="droppable d5" id="dot-container" data-draggable-id="5" data-row="1" data-col="1"><div id="dot"></div></div>
+                <div class="droppable d6" id="dot-container" data-draggable-id="6" data-row="1" data-col="2"><div id="dot"></div></div>
+                <div class="droppable d7" id="dot-container" data-draggable-id="7" data-row="2" data-col="0"><div id="dot"></div></div>
+                <div class="droppable d8" id="dot-container" data-draggable-id="8" data-row="2" data-col="1"><div id="dot"></div></div>
+                <div class="droppable d9" id="dot-container" data-draggable-id="9" data-row="2" data-col="2"><div id="dot"></div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

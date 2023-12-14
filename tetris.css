@@ -1,0 +1,98 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.container>div {
+    flex: 1;
+    overflow: auto;
+    padding: 20px;
+}
+
+#board-container {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 70%;
+}
+
+/* #items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+} */
+
+#board {
+    width: 300px;
+    height: 300px;
+    border: 5px solid rgb(255, 159, 15);
+    background-color: rgb(255, 227, 184);
+    /* border-radius: 15px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 10px; */
+}
+
+#dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100%;
+    /* border-radius: 10px; */
+    /* border: 1px solid rgb(255, 159, 15); */
+}
+
+#dot-container:hover #dot {
+    border: 5px solid rgb(255, 197, 197);
+}
+
+#dot {
+    width: 8px;
+    height: 8px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    background-color: rgb(255, 162, 24);
+    border: 5px solid rgb(255, 227, 184);
+}
+
+.draggable {
+    width: 80px;
+    height: 80px;
+    width: 240px; 
+    height: 240px; 
+    margin: 5px;
+}
+
+.droppable.droppable-hover {
+    border: 5px;
+    background-color: rgb(208, 255, 255);
+    transform: scale(1.05);
+}
+
+/* .dragged {
+    color: antiquewhite;
+    background-color: antiquewhite;
+} */
+
+.shape-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.shape{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    /* border: 1px solid black; */
+    clip-path: polygon(0 0, 33% 0, 33% 66%, 66% 66%, 66% 100%, 0 100%);
+    margin-bottom: 10px;
+}
